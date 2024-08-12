@@ -1,4 +1,4 @@
-# Proyecto Recetas - README
+# Miniproyecto Recemed - README
 
 ## Implementación de SSR y CSR
 
