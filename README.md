@@ -40,6 +40,16 @@ Para ejecutar el proyecto en tu entorno local descarga o clona este repositorio 
    ```bash
     npm run dev
 
+O iniciar el proyecto en modo producción (recomiendo esta)
+
+3. Iniciar build:
+   ```bash
+    npm run build
+
+3. Iniciar proyecto en modo prod:
+   ```bash
+    npm run prod
+
 ### Ejecutar el unit test
 
 1. Para ejecutar el unit test y asegurarte de que todo funciona correctamente, utiliza el siguiente comando:
