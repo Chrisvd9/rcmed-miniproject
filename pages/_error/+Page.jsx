@@ -1,31 +1,18 @@
-export { Page }
+export { Page };
 
-import { usePageContext } from '../../renderer/usePageContext'
+import { usePageContext } from "../../renderer/usePageContext";
 
 function Page() {
-  const pageContext = usePageContext()
-  let { abortReason } = pageContext
+  const pageContext = usePageContext();
+  let { abortReason } = pageContext;
   if (!abortReason) {
-    abortReason = pageContext.is404 ? 'Page not found.' : 'Something went wrong.'
+    abortReason = pageContext.is404
+      ? "Page not found."
+      : "Something went wrong.";
   }
   return (
-    <Center>
-      <p style={{ fontSize: '1.3em' }}>{abortReason}</p>
-    </Center>
-  )
-}
-
-function Center({ children }) {
-  return (
-    <div
-      style={{
-        height: 'calc(100vh - 100px)',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}
-    >
-      {children}
+    <div className="grid h-screen place-content-center bg-white px-4">
+      <h1 className="uppercase tracking-widest text-gray-500">{abortReason}</h1>
     </div>
-  )
+  );
 }
